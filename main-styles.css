@@ -1,0 +1,127 @@
+
+@font-face {
+  font-family: 'BentonSansRegular';
+  src:url('/assets/fonts/BentonSans-Regular.ttf') format ('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 26px;
+  height: 100vh;
+  font-family: 'BentonSans', Arial, Helvetica, sans-serif !important;
+  background: url('assets/img/bg.mp4') no-repeat center;
+  background-size: cover;
+  cursor: none;
+}
+
+body.kiosk-links {
+  cursor: pointer;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Place the video behind other content */
+}
+
+.small-symbol {
+  font-size: 0.7em; /* Adjust the size as needed */
+}
+
+#slide3 h1.animated{
+  font-size:4.7em;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+
+h1,
+h2,
+h3,
+div {
+  font-family: 'BentonSansRegular', sans-serif;
+  
+  font-weight: 200;
+  color: #ffff;
+  /* text-transform: uppercase; */
+}
+
+.qr-container,
+.qr-container iframe {
+  height: 276px;
+  width: 276px;
+}
+
+.qr-container {
+  margin-bottom: 200px;
+  transform: scale(2.5);
+}
+
+.qr-container iframe {
+  border: 10px white solid;
+}
+
+
+.large-poap {
+  margin-top: 220px;
+  width: 800px;
+  height: auto;
+}
+
+img.d-block.animated.img-fluid{
+  width: 100%;
+  height: auto;
+}
+
+
+.terms {
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.animated {
+  /* set up initial properties */
+  opacity: 0;
+  transform: translate(60px, 0)
+}
+
+
+.img-container {
+  width: 450px;
+  height: auto;
+}
+
+.poap-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.bottom-half {
+  position: fixed;
+  bottom: 550px;
+  left: 0;
+  width: 100%;
+  color: #fff; /* Set your preferred text color */
+  text-align: center; /* Center the content horizontally */
+}
+
+footer h4 {
+  text-align: center; /* Center the content horizontally */
+  /* font-weight: bold; */
+  font-size: 2.5em;
+  margin-top: 350px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta>
+
+  <!-- Changing these to local files so they load faster -->
+  <link href="assets/styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <link href="main-styles.css" rel="stylesheet">
+  <title>Welcome</title>
+</head>
+
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="assets/img/bg.mp4" type="video/mp4">
+    <!-- Add additional source elements for different video formats -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Carousel Start -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div id="poapCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+      
+            <div class="carousel-item active" data-bs-interval="12000" id="slide0">
+              <div class="container-fluid py-5 m-0 px-0">
+                <div class="row poap-row mt-5 justify-content-center animated">
+                  <div class="col-6  pb-5">
+                    <img src="assets/img/poap-2.gif" class="d-block animated img-fluid w-100" alt="..." />
+                  </div>
+                </div>
+      
+                <div class="row mt-2 justify-content-center">
+                  <div class="col pt-3  text-center" style="margin-top: 90px;">
+                    <h1 class="animated">Scan the QR code to</h1>
+                    <h1 class="animated">commemorate your 2023</h1>
+                    <h1 class="animated">US Open with this memento,</h1>
+                    <h1 class="animated">a free digital collectible.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second slide -->
+            <div class="carousel-item" data-bs-interval="12000" id="slide1">
+              <div class="container-fluid py-5 min-vh-100 min-vw-100">
+                <div class="row poap-row mt-5 justify-content-center animated">
+                  <div class="col-6  pb-5">
+                    <img src="assets/img/poap-2.gif" class="d-block animated img-fluid w-100" alt="..." />
+                  </div>
+                </div>
+                <div class="row mt-2 justify-content-center">
+                  <div class="col pt-3  text-center" style="margin-top: 90px;">
+                    <h1 class="animated"> Unlock exclusive Amex Offers </h1>
+                    <h1 class="animated"> for American Express<sup style="font-size: .4em; vertical-align:.35em">&reg;</sup></h1>
+                    <h1 class="animated"> US Consumer Card Members<sup style="font-size: .5em; vertical-align:.25em">*</sup> </h1>
+                    <br>
+                    <h3 class="animated "> Terms apply.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Third slide -->
+            <div class="carousel-item" data-bs-interval="12000" id="slide2">
+              <div class="container-fluid py-5">
+                <div class="row poap-row mt-5 justify-content-center animated">
+                  <div class="col-6  pb-5">
+                    <img src="assets/img/poap-2.gif" class="d-block animated img-fluid w-100" alt="..." />
+                  </div>
+                </div>
+                <div class="row mt-2 justify-content-center">
+                  <div class="col pt-5 pb-3  text-center" style="margin-top: 90px;">
+                    <h1 class="animated">Designed by Vero Escalante,</h1>
+                    <h1 class="animated">world-renowned illustrator</h1>
+                    <h1 class="animated">from Argentina.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of carousel -->
+    <!-- Start non-moving content -->
+    <div class="row bottom-half p-0 m-0">
+      <div class="col">
+        <div class="container-fluid">
+          <div class="row p-0 m-0">
+            <div class="col ">
+              <div class="qr-container mx-auto">
+                <iframe src="https://kiosk.poap.xyz//#/event/rZzJVd44mlJ2TJSF2hn2/iframe" scrolling="no" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-100">
+      <h4>In Partnership With</h4>
+    </footer>
+  </div>
+
+    <script src="assets/scripts/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/gsap.min.js" crossorigin="anonymous"></script>
+    <script src="./renderer.js"></script>
+
+
+</body>
+
+
+
+</html>
